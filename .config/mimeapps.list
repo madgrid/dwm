@@ -1,0 +1,7 @@
+[Default Applications]
+application/x-shellscript=sublime-usercreated-0.desktop;
+application/x-cd-image=xfburn.desktop;
+
+[Added Associations]
+application/x-shellscript=sublime-usercreated-0.desktop;
+application/x-cd-image=xfburn.desktop;

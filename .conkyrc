@@ -1,0 +1,24 @@
+ out_to_console yes
+out_to_x no
+background no
+update_interval 2
+total_run_times 0
+use_spacer none
+
+
+TEXT
+#$kernel :: $mpd_smart :: ${cpu cpu1}% :: ${cpu cpu2}% :: ${acpitemp}c :: $memperc% :: ${downspeed eth0}/s ${upspeed eth0}/s :: ${execi 300 /home/live/weather.sh "EUR|LU|LU001|Gralingen"} :: ${time %a %b %d %H:%M} 
+#${execi 300 /home/live/weather.sh "EUR|LU|LU001|Gralingen"} :: ${time %a %b %d %H:%M} 
+#${execi 300 /home/live/weather.sh "EUR|LU|LU001|Gralingen"} :: 
+#:: $mpd_smart :: deb ${execi 28800 ~/bin/debupdates.sh} pkg(s) :: ${time %H:%M} :: 
+#$mpd_smart ${execi 100 $HOME/weather.sh "EUR|LU|LU001|Gralingen"} ${execi 100 $HOME/english_time}
+
+#dwmx@openmailbox.org:${execi 600 python ~/bin/gmail.py} unread :: $mpd_smart :: $nodename $kernel :: RAM $mem = $memperc% :: APT:${execi 28800 bin
+#/debupdates.sh} updates :: ${execi 100 $HOME/english_time}
+
+#:: $mpd_smart :: $nodename $kernel :: RAM $mem = $memperc% :: APT:${execi 28800 ~/bin/debupdates.sh} updates :: ${execi 100 $HOME/english_time}
+
+#:: $mpd_smart :: $nodename $kernel :: RAM $mem = $memperc% :: APT:${execi 28800 ~/bin/debupdates.sh} updates :: ${execi 100 $HOME/english_time}
+# $nodename $kernel :: RAM $mem :: ${time %H:%M} ${execp ~/bin/binclock.sh} 
+# $nodename $kernel ${execp ~/bin/binclock.sh} RAM $mem ${execp ~/bin/binclock.sh} ${time %H:%M} ${execp ~/bin/binclock.sh} 
+$nodename $kernel ${execp ~/bin/binclock.sh} $mem ${execp ~/bin/binclock.sh} ${time %H:%M} ${execp ~/bin/binclock.sh} 

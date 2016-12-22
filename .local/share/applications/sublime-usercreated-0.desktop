@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=sublime
+Exec=sublime
+MimeType=application/x-shellscript
+Icon=exec
+NoDisplay=true
